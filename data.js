@@ -1,3 +1,5 @@
+const myIcon =
+
 [
 	{
 		name: 'cat',
@@ -112,3 +114,31 @@
 		color: 'blue'
 	}
 ];
+
+const myIconContainer = document.getElementById("container-icon")
+
+// Funzione per creare elementi nel DOM
+const createMyEl = (myClass, myEl) => {
+    const myElement = document.createElement(myEl);
+    myElement.className = myClass;
+    return myElement;
+}
+
+for (let i = 0; i < myIcon.length; i++) {
+	let myIconCard = myIcon[i];
+
+	let myCard = createMyEl("icon-card", "div");
+	let icon = createMyEl(myIcon["family"] myIcon["prefix"] myIcon["name"], "i");
+	console.log(icon);
+
+	myCard.append(icon);
+	myIconContainer.append(myCard);
+
+}
+
+// const animalIcon = myIcon.filter((icon) => { return (icon.type === "animal")
+// });
+
+// let animalIconCard = createMyEl("i");
+// myIconContainer.append(animalIconCard);
+// console.log(animalIconCard);
