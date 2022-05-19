@@ -128,7 +128,7 @@ for (let i = 0; i < myIcon.length; i++) {
 	let myIconCard = myIcon[i];
 
 	let myCard = createMyEl("icon-card", "div");
-	let icon = createMyEl("fas fa-" + myIconCard.name, "i");
+	let icon = createMyEl (myIconCard.family+ " fa-" + myIconCard.name + " " +myIconCard.color, "i");
 
 	let myText = createMyEl ("h4")
 	let myH4 = myIconCard.name
