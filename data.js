@@ -128,11 +128,18 @@ for (let i = 0; i < myIcon.length; i++) {
 	let myIconCard = myIcon[i];
 
 	let myCard = createMyEl("icon-card", "div");
-	let icon = createMyEl(myIcon["family"] myIcon["prefix"] myIcon["name"], "i");
-	console.log(icon);
+	let icon = createMyEl("fas fa-" + myIconCard.name, "i");
+
+	let myText = createMyEl ("h4")
+	let myH4 = myIconCard.name
 
 	myCard.append(icon);
+	myCard.append(myText);
+	myText.append(myH4);
 	myIconContainer.append(myCard);
+
+	
+
 
 }
 
