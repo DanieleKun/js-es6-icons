@@ -1,3 +1,11 @@
+/*Milestone 1
+Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell’icona e l’icona stessa.
+Milestone 2
+Ciascuna icona ha una proprietà “color”: utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
+Milestone 3
+Aggiungere alla pagina una select in cui le options corrispondono ai vari tipi di icone (animal, vegetable, user). Quando l’utente seleziona un tipo dalla select, visualizzare solamente le icone corrispondenti.*/
+
+
 const myIcon =
 
 [
@@ -128,7 +136,7 @@ for (let i = 0; i < myIcon.length; i++) {
 	let myIconCard = myIcon[i];
 
 	let myCard = createMyEl("icon-card", "div");
-	let icon = createMyEl (myIconCard.family+ " fa-" + myIconCard.name + " " +myIconCard.color, "i");
+	let icon = createMyEl (myIconCard.family+ " " +myIconCard.prefix + myIconCard.name + " " +myIconCard.color, "i");
 
 	let myText = createMyEl ("h4")
 	let myH4 = myIconCard.name
@@ -137,15 +145,5 @@ for (let i = 0; i < myIcon.length; i++) {
 	myCard.append(myText);
 	myText.append(myH4);
 	myIconContainer.append(myCard);
-
-	
-
-
 }
 
-// const animalIcon = myIcon.filter((icon) => { return (icon.type === "animal")
-// });
-
-// let animalIconCard = createMyEl("i");
-// myIconContainer.append(animalIconCard);
-// console.log(animalIconCard);

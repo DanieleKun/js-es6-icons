@@ -8,11 +8,19 @@ header {
     color: cornflowerblue;
 }
 
+#myinput {
+    background-color: deepskyblue;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
 #container-icon{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: lightgray;
+    margin-top: 20px;
 }
 
 .icon-card{
@@ -23,6 +31,7 @@ header {
     border-radius: 10px;
     text-align: center;
     font-size: 30px;
+    margin: 25px;
 }
 
 .blue {
